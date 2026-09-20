@@ -1,0 +1,13 @@
+:root {
+    --color-principal: #181818;
+    --color-secundario: #f4f4f4;
+    --color-fondo: #ffffff;
+    --color-texto: #181818;
+    --color-texto-suave: #777777;
+    --color-borde: #dddddd;
+    --color-peligro: #a00000;
+    --fuente-principal: Arial, Helvetica, sans-serif;
+    --alto-header: 72px;
+    --padding-horizontal: 6%;
+    --transicion: 0.25s ease;
+}

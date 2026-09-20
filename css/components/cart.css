@@ -1,0 +1,27 @@
+.panel-carrito {
+    position:fixed; top:0; right:-430px; z-index:300; display:flex; flex-direction:column;
+    width:min(420px,100%); height:100vh; padding:25px; background:white; transition:right .3s ease;
+}
+.panel-carrito.abierto { right:0; }
+.encabezado-carrito { display:flex; align-items:center; justify-content:space-between; padding-bottom:20px; border-bottom:1px solid var(--color-borde); }
+.encabezado-carrito button { border:0; background:transparent; cursor:pointer; font-size:1.3rem; }
+.lista-carrito { flex:1; overflow-y:auto; padding:20px 0; }
+.carrito-vacio { color:var(--color-texto-suave); }
+.producto-carrito { display:grid; grid-template-columns:75px 1fr; gap:15px; padding:18px 0; border-bottom:1px solid #eee; }
+.producto-carrito-imagen { width:75px; height:95px; overflow:hidden; background:#eee; }
+.producto-carrito-imagen img { height:100%; object-fit:cover; }
+.producto-carrito-info { display:flex; flex-direction:column; gap:7px; }
+.producto-carrito-info h4 { font-size:.95rem; }
+.producto-carrito-talla { color:var(--color-texto-suave); font-size:.8rem; }
+.producto-carrito-precio { font-size:.9rem; }
+.producto-carrito-controles { display:flex; align-items:center; justify-content:space-between; margin-top:5px; }
+.control-cantidad { display:flex; align-items:center; border:1px solid var(--color-borde); }
+.control-cantidad button { width:32px; height:32px; border:0; background:white; cursor:pointer; font-size:1.1rem; }
+.control-cantidad span { min-width:32px; text-align:center; font-size:.9rem; }
+.boton-eliminar-carrito { border:0; color:var(--color-texto-suave); background:transparent; cursor:pointer; font-size:.8rem; text-decoration:underline; }
+.subtotal-producto { margin-top:5px; font-size:.9rem; font-weight:bold; }
+.resumen-carrito { padding-top:20px; border-top:1px solid var(--color-borde); }
+.resumen-carrito p { display:flex; justify-content:space-between; margin-bottom:20px; }
+.resumen-carrito button { width:100%; padding:15px; color:white; background:var(--color-principal); border:0; cursor:pointer; font-weight:bold; }
+.fondo-oscuro { position:fixed; inset:0; z-index:200; visibility:hidden; opacity:0; background:rgba(0,0,0,.55); transition:opacity .3s ease, visibility .3s ease; }
+.fondo-oscuro.visible { visibility:visible; opacity:1; }

@@ -1,0 +1,32 @@
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    background: var(--color-fondo);
+}
+
+.subtitulo {
+    margin-bottom: 14px;
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.boton-principal {
+    display: inline-block;
+    padding: 15px 28px;
+    color: var(--color-principal);
+    background: white;
+    font-weight: bold;
+    transition: transform var(--transicion), background var(--transicion);
+}
+
+.boton-principal:hover { transform: translateY(-3px); background: #eee; }
+
+footer {
+    padding: 30px var(--padding-horizontal);
+    color: #bdbdbd;
+    background: #111;
+    text-align: center;
+    font-size: 0.85rem;
+}

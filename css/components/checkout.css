@@ -1,0 +1,29 @@
+.checkout { position:fixed; inset:0; z-index:500; display:none; overflow-y:auto; background:var(--color-secundario); }
+.checkout.visible { display:block; }
+.checkout-contenedor { position:relative; width:min(1200px,100%); min-height:100vh; margin:auto; background:white; }
+.cerrar-checkout { position:absolute; top:20px; right:20px; z-index:10; width:40px; height:40px; border:0; background:#f1f1f1; cursor:pointer; font-size:1.2rem; }
+.checkout-grid { display:grid; grid-template-columns:1.4fr 1fr; min-height:100vh; }
+.checkout-formulario { padding:70px; }
+.checkout-formulario h2 { margin-bottom:35px; font-size:2.4rem; }
+.checkout-formulario h3 { margin:35px 0 20px; font-size:1.1rem; }
+.checkout-dos-columnas { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.campo-checkout { display:flex; flex-direction:column; gap:8px; margin-bottom:20px; }
+.campo-checkout label { font-size:.8rem; font-weight:bold; text-transform:uppercase; }
+.campo-checkout input { padding:14px; border:1px solid #ccc; outline:none; }
+.campo-checkout input:focus { border-color:var(--color-principal); }
+.metodos-envio { display:flex; flex-direction:column; gap:12px; margin-bottom:30px; }
+.metodo-envio { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:15px; padding:18px; border:1px solid var(--color-borde); cursor:pointer; }
+.metodo-envio span { display:flex; flex-direction:column; gap:3px; }
+.metodo-envio small { color:var(--color-texto-suave); }
+.boton-continuar-pago { width:100%; padding:16px; color:white; background:var(--color-principal); border:0; cursor:pointer; font-weight:bold; font-size:1rem; }
+.checkout-resumen { padding:70px 50px; background:#f5f5f5; }
+.checkout-resumen h2 { margin-bottom:30px; }
+.checkout-producto { display:grid; grid-template-columns:65px 1fr auto; gap:15px; align-items:center; padding:15px 0; border-bottom:1px solid var(--color-borde); }
+.checkout-producto img { width:65px; height:80px; object-fit:cover; }
+.checkout-producto-info h4 { margin-bottom:5px; font-size:.9rem; }
+.checkout-producto-info p { color:var(--color-texto-suave); font-size:.8rem; }
+.checkout-totales { margin-top:30px; }
+.checkout-totales div { display:flex; justify-content:space-between; padding:12px 0; }
+.checkout-total-final { margin-top:15px; padding-top:20px!important; border-top:2px solid var(--color-principal); font-size:1.2rem; }
+@media (max-width:850px){.checkout-grid{grid-template-columns:1fr}.checkout-resumen{order:-1}}
+@media (max-width:600px){.checkout-formulario{padding:70px 25px}.checkout-resumen{padding:70px 25px 40px}.checkout-dos-columnas{grid-template-columns:1fr}}

@@ -1,0 +1,13 @@
+.seccion-productos { padding:100px var(--padding-horizontal); }
+.titulo-seccion { margin-bottom:45px; text-align:center; }
+.titulo-seccion p { margin-bottom:8px; color:var(--color-texto-suave); font-size:.8rem; font-weight:bold; letter-spacing:2px; text-transform:uppercase; }
+.titulo-seccion h2 { font-size:clamp(2rem,4vw,3.2rem); }
+.barra-filtros { display:grid; grid-template-columns:2fr 1fr 1fr; gap:20px; max-width:1000px; margin:0 auto 45px; }
+.grupo-filtro { display:flex; flex-direction:column; gap:8px; }
+.grupo-filtro label { font-size:.78rem; font-weight:bold; text-transform:uppercase; letter-spacing:1px; }
+.grupo-filtro input, .grupo-filtro select { width:100%; padding:13px 15px; border:1px solid #d7d7d7; background:white; outline:none; }
+.grupo-filtro input:focus, .grupo-filtro select:focus { border-color:var(--color-principal); }
+.sin-productos { display:none; margin-top:40px; color:var(--color-texto-suave); text-align:center; font-size:1.1rem; }
+.contenedor-productos { display:grid; grid-template-columns:repeat(4,1fr); gap:25px; }
+@media(max-width:1000px){.contenedor-productos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.barra-filtros,.contenedor-productos{grid-template-columns:1fr}.seccion-productos{padding:75px 6%}}

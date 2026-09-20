@@ -1,0 +1,10 @@
+.portada {
+    min-height:calc(100vh - var(--alto-header)); display:flex; align-items:center; padding:8%;
+    background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(23,4,233,.15)),
+        url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1800&q=85");
+    background-position:center; background-size:cover;
+}
+.portada-contenido { max-width:650px; color:white; }
+.portada h1 { margin-bottom:20px; font-size:clamp(3rem,7vw,6.5rem); line-height:.95; }
+.descripcion-portada { max-width:530px; margin-bottom:34px; font-size:1.1rem; line-height:1.7; }
+@media(max-width:700px){.portada{min-height:700px;padding:12% 6%}}
