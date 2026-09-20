@@ -1,0 +1,128 @@
+<section class="checkout" id="checkout">
+    <div class="checkout-contenedor">
+        <button class="cerrar-checkout" id="cerrarCheckout" aria-label="Cerrar checkout">✕</button>
+
+        <div class="checkout-grid">
+            <div class="checkout-formulario">
+                <p class="subtitulo">Finalizar compra</p>
+                <h2>Información de envío</h2>
+
+                <form id="formularioCheckout">
+                    <div class="checkout-dos-columnas">
+                        <div class="campo-checkout">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        <div class="campo-checkout">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-checkout">
+                        <label for="correoCheckout">Correo electrónico</label>
+                        <input type="email" id="correoCheckout" required>
+                    </div>
+
+                    <div class="campo-checkout">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" required>
+                    </div>
+
+                    <h3>Dirección</h3>
+                    <div class="campo-checkout">
+                        <label for="calle">Calle</label>
+                        <input type="text" id="calle" required>
+                    </div>
+
+                    <div class="checkout-dos-columnas">
+                        <div class="campo-checkout">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" required>
+                        </div>
+                        <div class="campo-checkout">
+                            <label for="codigoPostal">Código postal</label>
+                            <input type="text" id="codigoPostal" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-checkout">
+                        <label for="colonia">Colonia</label>
+                        <input type="text" id="colonia" required>
+                    </div>
+
+                    <div class="checkout-dos-columnas">
+                        <div class="campo-checkout">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" required>
+                        </div>
+                        <div class="campo-checkout">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" required>
+                        </div>
+                    </div>
+
+                    <h3>Método de entrega</h3>
+                    <div class="metodos-envio">
+                        <label class="metodo-envio">
+                            <input type="radio" name="envio" value="99" checked>
+                            <span>
+                                <strong>Envío estándar</strong>
+                                <small>3 a 5 días hábiles</small>
+                            </span>
+                            <strong>$99</strong>
+                        </label>
+
+                        <label class="metodo-envio">
+                            <input type="radio" name="envio" value="179">
+                            <span>
+                                <strong>Envío express</strong>
+                                <small>1 a 2 días hábiles</small>
+                            </span>
+                            <strong>$179</strong>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="boton-continuar-pago">
+                        Continuar al pago
+                    </button>
+                </form>
+
+                <section class="checkout-pago-tarjeta" id="checkoutPagoTarjeta" hidden>
+                    <h3>Pago con tarjeta</h3>
+                    <p id="pagoMensaje">Demostración visual. No ingreses datos reales.</p>
+                    <div id="cardPaymentBrick_container" class="demo-pago">
+ <p class="demo-nota">Formulario ilustrativo: los datos de tarjeta están bloqueados. No se conecta con Mercado Pago.</p>
+ <div class="campo-checkout"><label>Número de tarjeta de ejemplo</label><input value="•••• •••• •••• 1234" readonly aria-label="Tarjeta de ejemplo"></div>
+ <div class="checkout-dos-columnas"><div class="campo-checkout"><label>Vencimiento</label><input value="12/30" readonly aria-label="Vencimiento de ejemplo"></div><div class="campo-checkout"><label>Código de seguridad</label><input value="•••" readonly aria-label="Código de ejemplo"></div></div>
+ <div class="campo-checkout"><label>Titular</label><input value="CLIENTE DEMO" readonly aria-label="Titular de ejemplo"></div>
+ <div class="campo-checkout"><label for="demoResultado">Resultado a simular</label><select id="demoResultado"><option value="approved">Pago aprobado</option><option value="pending">Pago pendiente</option><option value="rejected">Pago rechazado</option></select></div>
+ <button type="button" id="demoPagar" class="boton-continuar-pago">Simular pago</button>
+</div>
+<div class="demo-acciones"><button type="button" id="demoEditar">Volver a editar carrito</button><button type="button" id="demoConsultar" hidden>Simular confirmación del pendiente</button><button type="button" id="demoReiniciar" hidden>Comenzar otra demostración</button></div>
+
+                </section>
+            </div>
+
+            <aside class="checkout-resumen">
+                <h2>Resumen del pedido</h2>
+                <div id="checkoutProductos"></div>
+
+                <div class="checkout-totales">
+                    <div>
+                        <span>Subtotal</span>
+                        <strong id="checkoutSubtotal">$0</strong>
+                    </div>
+                    <div>
+                        <span>Envío</span>
+                        <strong id="checkoutEnvio">$99</strong>
+                    </div>
+                    <div class="checkout-total-final">
+                        <span>Total</span>
+                        <strong id="checkoutTotal">$0</strong>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>

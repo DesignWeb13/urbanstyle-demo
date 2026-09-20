@@ -1,0 +1,111 @@
+<section class="modal-producto" id="modalProducto">
+
+    <div class="modal-contenido">
+
+        <button
+            class="cerrar-modal"
+            id="cerrarModalProducto"
+            aria-label="Cerrar producto"
+            type="button"
+        >
+            ✕
+        </button>
+
+        <div class="modal-grid">
+
+            <!-- ========================= -->
+            <!-- GALERÍA DE IMÁGENES       -->
+            <!-- ========================= -->
+
+            <div class="galeria-producto">
+
+                <div class="modal-imagen">
+                    <img
+                        id="modalImagen"
+                        src=""
+                        alt=""
+                    >
+                </div>
+
+                <div
+                    class="miniaturas-producto"
+                    id="modalMiniaturas"
+                >
+                </div>
+
+            </div>
+            <!-- ========================= -->
+            <!-- INFORMACIÓN DEL PRODUCTO  -->
+            <!-- ========================= -->
+
+            <div class="modal-info">
+
+                <p
+                    class="modal-categoria"
+                    id="modalCategoria"
+                ></p>
+
+                <h2 id="modalNombre"></h2>
+
+                <div class="modal-precios">
+
+                    <span
+                        class="modal-precio-anterior"
+                        id="modalPrecioAnterior"
+                    ></span>
+
+                    <span
+                        class="modal-precio"
+                        id="modalPrecio"
+                    ></span>
+
+                </div>
+
+                <p
+                    class="modal-descripcion"
+                    id="modalDescripcion"
+                ></p>
+
+
+                <!-- TALLA -->
+
+                <div class="selector-producto">
+
+                    <label for="modalTalla">
+                        Talla
+                    </label>
+
+                    <select id="modalTalla">
+                    </select>
+
+                    <p
+                        class="stock-variante"
+                        id="modalStock"
+                    ></p>
+
+                </div>
+                <!-- CANTIDAD -->
+                <div class="selector-producto">
+
+                    <label for="modalCantidad">
+                        Cantidad
+                    </label>
+                    <input
+                        type="number"
+                        id="modalCantidad"
+                        min="1"
+                        value="1"
+                    >
+
+                </div>
+                <button
+                    class="boton-agregar-modal"
+                    id="agregarDesdeModal"
+                    type="button"
+                >
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
